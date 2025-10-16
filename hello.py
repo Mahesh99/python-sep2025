@@ -56,10 +56,10 @@ print(type(b))
 
 
 # Data types
-# int
-# float
-# bool
-# str - used to represent text
+# int - ...-3, -2, -1, 0, 1, 2, 3...
+# float - 1.2, 3.4, 5.6
+# bool - True, False
+# str - "hi","1","lakshith","123" - used to represent text
 
 k=True
 l=False
@@ -132,3 +132,74 @@ print(not False)
 # 5+4
 # operand     operator     operand
 #    5            +           3
+
+
+# Type conversion
+# float(), int(), str()
+
+# int()
+a=1.6
+b=int(a)
+c=int("12") # main
+d="12"
+# e="1.2"
+# f=int(e)  # error
+print(type(a),type(b),type(d))
+print(b,c)
+
+# print("74*5=",74*5)
+
+
+# float()
+a=1
+b=float(a)
+print(b)
+c=float("12.5") # main
+d=float("12") # main
+print(c,d)
+
+# str()
+a=1.6
+b=11
+c= str(a) # "1.6"
+d= str(b) # "11"
+print(type(c),type(d))
+print(a,b)
+print(c,d)
+
+print("sum of 2 and 3 is "+str(2+3))
+
+
+# String operations
+# +(concatenation), *(repetition)
+
+s1="Hello"
+s2="World"
+s3=s1+s2
+print(s3)
+s3=s1+" "+s2
+print(s3)
+
+# "1" + "hello"
+# 2+3.4
+# 5+"hello" - error
+
+g="hello"
+f=g*5
+print(f)
+
+# Comments - is a line in a program that is ignored by the python interpreter
+# Single line comment - #
+# Multi line comment - '''...''' or """..."""
+
+
+"""
+This is a
+multi line
+comment
+"""
+
+'''This is a
+multi line
+comment
+'''
