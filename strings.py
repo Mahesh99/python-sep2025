@@ -50,7 +50,7 @@ print(s[-1])  # d
 
 # len()
 # function to find length of string
-print(len(s))
+print(len(s)) # 11
 print(len(s6))
 print(len("hello everyone"))
 
@@ -59,6 +59,8 @@ print(len("hello everyone"))
 
 s="  Hello World  "
 s6="Welcome to python programming. It's fun to learn python. Python is easy to learn. Python is powerful."
+# s6[1] = "M"  # This will raise an error since strings are immutable 
+
 print(s.lower())
 print(s.upper())
 print(s6.capitalize())
@@ -120,4 +122,21 @@ print("this is a f-string 3*2 {name.lower()}")
 print(dir(str))
 print(help(str.replace))
 print(help(str.lower))
-print(help(str))
+# print(help(str))
+
+
+# slicing
+s="Hello World"
+s1=s[0:5]  # Hello
+s2=s[:5]  # Hello
+print(s1,s2,s)
+print(s[8:11])
+print(s[8:])
+
+# step value
+s3=s[::2]  # HloWrd
+s3=s[0:11:3]  # HlWl
+print(s3)
+
+s4=s[::-1]  # reverse string
+print(s4)
