@@ -66,3 +66,29 @@ print(s2)
 
 std2=stds[::2]
 print(std2)
+
+
+# list methods
+# append(), insert(), remove(), pop(), sort(), reverse(), clear(), extend()
+l=[5,2,8,1,4,5]
+print(l)
+l.remove(5)  # removes first occurrence of 5
+# l.remove(5)  # removes first occurrence of 5
+# l.remove(5)  # removes first occurrence of 5
+# print(l)
+# l.sort()
+print(l)
+l.sort(reverse=True)
+print(l)
+
+l=l[::-1]
+# l.reverse()
+print(l)
+
+j=[10,20,30]
+l.extend(j)
+print(l)
+
+
+l.clear()
+print(l)
