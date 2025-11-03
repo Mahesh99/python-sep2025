@@ -92,3 +92,35 @@ print(l)
 
 l.clear()
 print(l)
+
+# tuple, set, dict
+# tuple
+
+
+point = (4,3,11) # (x,y,z) coordinates in a 3d space
+location = (17.393549, 78.533836) #(latitude, longitude)
+dimens = 10,20,15 # (l,b,h) dimensions of a cuboid. Tuple can also be intialized this way
+print(type(dimens))
+
+l,b,h = dimens # Tuple unpacking
+print(l,b,h)
+print(dir(point))
+
+# set
+s={1,2,3,4,5,5,4,3}
+print(s)
+# print(s[0]) # will raise an error
+
+
+fav_actors = ["Prabhas","Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naani",
+                   "Ram Charan","Rakul Preeth","Samantha","Rakul Preeth","Prabhas","Samantha",
+                  "Nivedha Thomas","Naaga chaithanya","Salman khan","Salman khan","Vijay","Shradha kapoor","Vijay",
+                  "Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naaga chaithanya","Salman khan"]
+print(len(fav_actors))
+unique_fav_actors = set(fav_actors)
+print(unique_fav_actors,len(unique_fav_actors))
+
+actors=list(unique_fav_actors)
+print(actors)
+
+# set(), list(), tuple() type conversion functions
