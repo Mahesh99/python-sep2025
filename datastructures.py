@@ -124,3 +124,55 @@ actors=list(unique_fav_actors)
 print(actors)
 
 # set(), list(), tuple() type conversion functions
+
+print(dir(set))
+
+# set methods
+# add(), union(), intersection(), remove(), pop()
+s={11,22,3,4,5}
+s.add(10)
+print(s)
+s2={11,20,13,5}
+s3=s.union(s2)
+print(s3)
+
+s4=s.intersection(s2)
+print(s4)
+print(s.pop())
+print(s.pop())
+print(s.pop())
+
+# print(help(set.pop))
+
+# dictionary
+
+#creating a dictionary
+std={"name":"Lakshith","course":"python","duration":60,"fee":6000}
+std2={"name":"charan","course":"python","duration":60,"fee":6000}
+
+#accessing
+print(std["name"])
+print(std["fee"])
+
+#modifying
+std["duration"]=45
+std["fee"]=6500
+std["batch"]="sep-2025"
+
+print(std,std2)
+
+std_list=[std,std2]
+print(std_list)
+
+print(std_list[0]["name"])
+print(std_list[1]["name"])
+
+# in
+print("name" in std)
+print("fee" in std)
+print("age" in std)
+print(6000 in std)
+
+# key(), values()
+print(std.keys())
+print(std.values())
